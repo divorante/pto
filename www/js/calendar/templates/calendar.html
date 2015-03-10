@@ -1,0 +1,20 @@
+<ion-view title="Calendar">
+  <ion-content class="has-header padding">
+    <div class="row">
+      <div class="col">Total</div>
+      <div class="col">Used</div>
+      <div class="col">Balance</div>
+    </div>
+
+    <div class="row">
+      <div class="col">{{total}}</div>
+      <div class="col">{{used}}</div>
+      <div class="col">{{balance}}</div>
+    </div>
+ 
+    <div ui-calendar="uiConfig.calendar">
+
+    <p>You have {{balance/8}} days left.</p>
+
+  </ion-content>
+</ion-view>

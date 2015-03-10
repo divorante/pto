@@ -1,0 +1,34 @@
+<ion-view title="Settings">
+  <ion-content class="has-header padding">
+    <h3>Paid Time Off</h3>
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Hours accrued 
+      </div>
+      <select>
+        <option value="bimonthly">bimonthly</option>
+        <option value="monthly" selected>monthly</option>
+        <option value="annually">annually</option>
+      </select>
+    </label>
+    <label class="item item-input">
+      <input type="number" placeholder="{{rate}}">
+      <span class="input-label">hours</span>
+    </label>
+    <h3>Calendar Settings</h3>
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Holidays
+      </div>
+      <select>
+        <option value="none" selected>None</option>
+        <option value="us" selected>US</option>
+        <option value="canada">Canada</option>
+      </select>
+    </label>
+
+    <ion-item type="item-text-wrap" href="#/tab/settings/holidays">
+      Company Holidays
+    </ion-item>
+  </ion-content>
+</ion-view>
